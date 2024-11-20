@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Achievements</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Freshmen Student</p>
+            <h1>Hi, I'm <span>Miguel Assin<br></span>from Philippines</h1>
+        </div>
+    </div>
+</div>
+<!-----------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/col-1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Miguel James Assin from the Philippines. 
+                    Currently studying at the University of the East Caloocan Campus. 
+                    Enrolled as a Freshmen College taking Bachelor of Science in Information Technology</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Hard skill</span><br>Computer literacy</li>
+                        <li><span>Hard skill</span><br>IT skill</li>
+                        <li><span>Soft skill</span><br>Teamwork</li>
+                        <li><span>Soft skill</span><br>Adaptability</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Elementary</span>Esteban Abada</li>
+                        <li><span>Junior High</span>Quezon City Academy</li>
+                        <li><span>Senior High</span>University of the East</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+
+   function opentab(tabname){
+     for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+     } 
+     for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+     } 
+     event.currentTarget.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+     
+   } 
+
+
+</script>
+</body>
+</html>
