@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <div id="header">
@@ -12,10 +14,11 @@
         <nav>
             <img src="images/logo.png" class="logo">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Achievements</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-text">
@@ -35,31 +38,109 @@
                 <h1 class="sub-title">About Me</h1>
                 <p>Hi, I'm Miguel James Assin from the Philippines. 
                     Currently studying at the University of the East Caloocan Campus. 
-                    Enrolled as a Freshmen College taking Bachelor of Science in Information Technology</p>
+                    Enrolled as a Freshmen College taking Bachelor of Science in Information Technology. Aiming for success
+                and facing any hindrances I encounter, with a goal to strive and give the best performance for my client.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="Skills">
                     <ul>
-                        <li><span>Hard skill</span><br>Computer literacy</li>
-                        <li><span>Hard skill</span><br>IT skill</li>
-                        <li><span>Soft skill</span><br>Teamwork</li>
-                        <li><span>Soft skill</span><br>Adaptability</li>
+                        <li><span>Hard skill</span><br>Computer literacy<br>I have the knowledge and ability to use computers and related technologies.</li>
+                        <li><span>Hard skill</span><br>IT skill<br>As a IT student I possess the ability to program a code.</li>
+                        <li><span>Soft skill</span><br>Teamwork<br>I am open to collborative work, to make the the output of the product better.</li>
+                        <li><span>Soft skill</span><br>Adaptability<br>I am good with change in environment and can easily adapt to new system.</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="Education">
                     <ul>
-                        <li><span>Elementary</span>Esteban Abada</li>
-                        <li><span>Junior High</span>Quezon City Academy</li>
-                        <li><span>Senior High</span>University of the East</li>
+                        <li><span>Elementary</span><br>Esteban Abada</li>
+                        <li><span>Junior Highschool</span><br>Quezon City Academy</li>
+                        <li><span>Senior Highschool</span><br>University of the East</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<!-------achievements----------->
+<div id="achievements">
+    <div class="container">
+        <h1 class="sub-title">Achievements</h1>
+            <div class="achievements-list">
+                <div>
+                    <h2>Class Achiever</h2>
+                    <p>With Honors during Grade 12, School year 2023-2024</p>
+                </div>
+                <div>
+                    <h2>Work Immersion Completer</h2>
+                    <p>Completed the 90 hours immersion on Computer Engineering</p>
+                </div>
+                <div>
+                    <h2>SHS Robotics</h2>
+                    <p>Completed the 2 day event of Robotics in LCT for Grade 12 STEM students.</p>
+                </div>
+            </div>
+    </div>
+</div>
+<!--about-->
+<div id="hobbies">
+    <div class="container">
+        <h1 class="sub-title">Hobbies</h1>
+            <div class="about-list">
+                <div class="hobbies">
+                    <img src="images/hobbies-img-1.jpg">
+                    <div class="layer">
+                       <h3>Online Games</h3>
+                       <p>I engage in Competetive, Adventure, PVP, and FPS types of games. One of my favorite game is WarFrame
+                        this game is multiplayer and engages in trading, farming, and logical thinking.
+                       </p>
+                    </div>
+                </div>
+                <div class="hobbies">
+                    <img src="images/hobbies-img-2.jpg">
+                    <div class="layer">
+                        <h3>Basketball</h3>
+                        <p>Although not the best playing Basketball is one of my hobbies.
+                        </p>
+                     </div>
+                </div>
+                <div class="hobbies">
+                    <img src="images/hobbies-img-3.jpg">
+                    <div class="layer">
+                        <h3>Gym</h3>
+                        <p>I go to the gym for 2 days in 1 week since, to keep my body productive and healthy.
+                        </p>
+                     </div>
+                </div>
+            </div>
+    </div>
+</div>
+<!-------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> assinmiguel@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 09284957843</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/makoto.fukimo9"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/migszsss?igsh=am02OGNrOXQya2Vu"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
 
    var tablinks = document.getElementsByClassName("tab-links");
